@@ -5,10 +5,46 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css"/>
-    <title>Vite App</title>
+    <title>JavaScript-E-commerce-04_blue</title>
   </head>
   <body>
+    <nav>
+      <div class="my-class"><h1>Shopping Cart</h1> </div>
+    </nav>
+
+    <div class="my-item">
+      <h3>Add Item for selection</h3>
+      <div>
+        Product Name:
+        <input id="input-txt" placeholder="กรอกข้อมูลสินค้า" />
+      </div>
+      <div>
+        Price:
+        <input id="input-price" type="number" placeholder="กรอกราคา" />
+      </div>
+      <div>
+        Image:
+        <input id="input-img" type="text" placeholder="กรอกลิงค์รูปภาพ" />
+      </div>
+      <button class="create-product" onclick="addItem()">Create Product</button>
+    </div>
+
+    <div class="container">
+      <div class="list">
+        <h3>Current Product</h3>
+        <div id="app"></div>
+        <button class="RemoveSelected" onclick="removeSelectedItems()">Remove Selected</button>
+        <div class="total-price" id="total-price">Total: 0.00 บาท</div>
+     </div>
+
+     <div class="history">
+        <h3>ประวัติการลบสินค้า</h3>
+        <div id="history"></div>
+     </div>
+    </div>
+
+
     <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <script src="./main.js"> </script>
   </body>
 </html>

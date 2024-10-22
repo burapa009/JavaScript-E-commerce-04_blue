@@ -1,3 +1,86 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.my-class{
+  color: teal; 
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  font-size: 50px;
+}
+
+.my-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: c;
+  margin-right: 10px;
+  margin: 50px;
+}
+
+.create-product {
+  width: 150px;
+  border-radius: 10px;
+  border: 2px solid #4caf50;
+}
+
+.create-product:hover {
+  color: aqua;
+  background-color: rgb(240, 94, 26);
+  border-color: white;
+  transform: scale(1.5);
+ 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  margin: auto 50px;
+  
+}
+
+button {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.total-price {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.history {
+  margin-top: 50px;
+}
+
+.total-price {
+  color: red;
+}
+
+
+.Remove{
+  border: solid rgb(224, 96, 64) 2px;
+  background-color: rgb(230, 144, 17);
+  
+}
+
+.Remove:hover{
+  background-color: aliceblue;
+  transform: scale(1.5);
+}
+
+.RemoveSelected{
+  border: solid seagreen 2px;
+  background-color: rgb(202, 217, 219);
+  
+}
+
+.RemoveSelected:hover{
+  background-color: rgb(163, 226, 16);
+  color: rgb(226, 43, 83);
+  transform: scale(1.5);
+  
+}
